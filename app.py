@@ -6,12 +6,12 @@ app = Flask(__name__)
 # Ma'lumotlar bazasi sifatida oddiy ro'yxat
 
 # GET so'rovi
-@app.route('/items', methods=['GET'])
+@app.route('/projects', methods=['GET'])
 def get_items():
     return jsonify(data)
 
 # POST so'rovi
-@app.route('/items', methods=['POST'])
+@app.route('/projects', methods=['POST'])
 def add_item():
     item = request.json
     data.append(item)
